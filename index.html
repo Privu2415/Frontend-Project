@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frontend Project Hub</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Privubrotha Garai</h1>
+
+<nav>
+<a href="#portfolio">Portfolio</a>
+<a href="#todo">Todo App</a>
+<a href="#products">Products</a>
+</nav>
+
+</header>
+
+
+
+<section id="portfolio">
+
+<h2>Personal Portfolio</h2>
+
+<div class="portfolio-container">
+
+<div class="card">
+<h3  >About Me</h3>
+<p id="about-text">Frontend developer skilled in HTML, CSS, JavaScript and building responsive UI.</p>
+</div>
+
+<div class="card">
+<h3 id="projects">Projects</h3>
+<ul>
+<li>To-Do App with Local Storage</li>
+<li>Product Filter & Sort Page</li>
+<li>Portfolio Website</li>
+</ul>
+</div>
+
+
+
+<div class="card">
+<h3>Contact</h3>
+
+<form id="contactForm">
+
+<input type="text" id="name" class="input" placeholder="Your Name" required>
+
+<input type="email" id="email" class="input" placeholder="Email" required>
+
+<textarea id="message" class="input" placeholder="Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<p id="successMsg"></p>
+
+</div>
+
+</section>
+
+
+
+
+<section id="todo">
+
+<h2>Advanced Todo App</h2>
+
+<div class="todo-container">
+
+<input type="text" id="taskInput" placeholder="Enter task">
+
+<button onclick="addTask()">Add Task</button>
+
+<ul id="taskList"></ul>
+
+</div>
+
+</section>
+
+
+
+
+<section id="products">
+
+<h2>Product Store</h2>
+
+<div class="controls">
+
+<input type="text" id="search" placeholder="Search product">
+
+<select id="sort">
+<option value="">Sort</option>
+<option value="low">Price Low to High</option>
+<option value="high">Price High to Low</option>
+</select>
+
+</div>
+
+<div id="productContainer"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
